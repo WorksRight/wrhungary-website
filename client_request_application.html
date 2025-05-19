@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Service - Works Right Hungary</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div>
+        <header>
+
+            <div class="logo-header-container">
+                <div class="logo-header">
+                    <a href="./index.html">
+                        <img class="logo" src="./images/FullLogo_Transparent_NoBuffer.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <nav class="navibar">
+                <ul class="navibar-list">
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li>
+                        <a href="#">Who We Are &#x25BE;</a>
+                        <ul class="dropdown">
+                            <li><a href="./our_brand.html">Our Brand</a></li>
+                            <li><a href="./our_services.html">Our Services</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Current Vacancies &#x25BE;</a>
+                        <ul class="dropdown">
+                            <li><a href="./delivery_services.html">Delivery Services</a></li>
+                            <li><a href="./cleaning_services.html">Cleaning Services</a></li>
+                            <li><a href="./house_keeping.html">House Keeping</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Connect With Us &#x25BE;</a>
+                        <ul class="dropdown">
+                            <li><a href="./general_enquiry.html">General Enquiry</a></li>
+                            <li><a href="./work_visa_application.html">Work Visa Support</a></li>
+                            <li><a href="./incident_report.html">Incident Report Form</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+
+    <div>
+        <main>
+            <div class="contact-form">
+
+                <div class="contact-form-image">
+
+                </div>
+
+                <p class="contact-form-text-1"> 
+                    Service Request Form</p>
+
+                <p class="contact-form-text-2">
+                    Please fill the form below and we will get back to you as soon as we can.
+                </p>
+
+                <form method="post" action="https://formsubmit.co/info@wrhungary.com" enctype="multipart/form-data">
+                    <input type="hidden" name="_subject" value="New submission! - Service Request">
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting us. We will get back to you shortly.">
+
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="Full-Name" id="full-name" placeholder="Your Fullname" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="Email" id="email" placeholder="Your Email Address" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="Phone" id="phone" placeholder="Your Phone Number" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="nationality">Local Address </label>
+                        <input type="text" name="Local-Address" id="local-address" placeholder="Your Local Address" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="location">District</label>
+                        <input type="text" name="Location" id="location" placeholder="Your City/Town" required>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <div>
+                        <label for="contact-reason">Subject</label>
+                        <select class="contact-reason" name="Service">
+                            <option value="select-one"> --Please choose an option-- </option>
+                            <option value="Fast-Delivery-Service">Fast Delivery Service</option>
+                            <option value="Expert-Cleaning-Services">Expert Cleaning Services</option>
+                            <option value="Professional-House-Keeping-Services">Professional House-Keeping Services</option>
+                            <option value="Cheap-Affordable-Accommodation">Cheap & Affordable Accommodation</option>
+                            <option value="Short-Long-Term-Vehicle-Rentals">Short & Long Term Vehicle Rentals</option>
+                            <option value="High-Quality-Work-Equipments">High Quality Work Equipments</option>
+                        </select>
+                    </div>
+
+                    <div>             
+                        <label for="appointment-date">Select Date:</label>
+                        <input type="date" name="Requested-Date" id="appointment-date" name="appointment-date">
+                    </div>
+
+                    <div>
+                        <label for="appointment-time">Select Time:</label>
+                        <input type="time" name="Requested-Time" id="appointment-time" name="appointment-time">
+                    </div>
+
+                    <div>
+                        <label for="Additional-Info">Additional Comments</label>
+                        <textarea name="Additional-Info" id="Additional-Info"> </textarea>
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+                    <p class="contact-form-cta">
+                        By submitting this form, you agree to our <emp><b>Terms of Use.</b></emp>
+                        
+                        <br>
+
+                        <br>
+
+                        **Disclaimer: Please note that our services are only available to clients in Budapest**
+                    </p>
+
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <div class="footer-image">
+        <footer>
+            <div>
+                <p>© 2025 Works Right Hungary. All rights reserved.</p> 
+            </div>
+            
+            <div>
+                <p class=><a class="footer-use-policy" href="./terms_of_use.html" target="_blank">Terms of Use</a></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
