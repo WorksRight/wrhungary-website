@@ -34,6 +34,7 @@ h1{
 
 .logo-header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-left: 2rem;
 }
@@ -132,11 +133,9 @@ footer{
 .slogan{
     text-align: right;
     color: #45A4DC;
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-style: italic;
-    padding-right: 3rem;
     font-weight: bold;
-    align-items: center;
 }
 
 .slideshow-container {
@@ -560,18 +559,29 @@ form {
     }
   }
 
-  @media(max-width: 450px) {
+  @media(max-width: 300px) {
     .logo-header-container{
-        min-height: 80px;
+        display: grid;
+        gap: -1rem;
+        grid-template-rows: 
+            repeat(auto-fit,minimax(280px, 1fr));
         margin: auto;
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 14vh;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-bottom: -2rem;
+        padding: 0.2rem;
     }
-  }
+  
+    }
+    .logo-header .logo{
+        height: 70px;
+        width: auto;
+    }
+
+    .slogan{
+        text-wrap: none;
+        text-align: center;
+        font-size: clamp(1.0rem, 1.5rem, 1.125rem);
+        padding: 1.0rem;
+    }
+  
 
   
   
