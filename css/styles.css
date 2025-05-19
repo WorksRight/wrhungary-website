@@ -559,17 +559,16 @@ form {
     }
   }
 
-  @media(max-width: 300px) {
+  @media(max-width: 600px) {
     .logo-header-container{
-        display: grid;
-        gap: -1rem;
-        grid-template-rows: 
-            repeat(auto-fit,minimax(280px, 1fr));
+        display: -ms-inline-grid;
+        grid-template-rows: 1fr 1fr;
         margin: auto;
         padding: 0.2rem;
+        max-height: 100px;
+        min-width: auto;
     }
-  
-    }
+
     .logo-header .logo{
         height: 70px;
         width: auto;
@@ -577,10 +576,14 @@ form {
 
     .slogan{
         text-wrap: none;
-        text-align: center;
+        text-align: right;
         font-size: clamp(1.0rem, 1.5rem, 1.125rem);
         padding: 1.0rem;
+        align-content: right;
     }
+}
+    
+    
   
 
   
